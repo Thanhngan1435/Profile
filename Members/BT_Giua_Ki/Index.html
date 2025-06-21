@@ -6,12 +6,11 @@
   <title>Profile của My</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-<script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
+  <!-- ĐÃ GỠ SplitText -->
   <script src="main.js" defer></script>
-
 </head>
 <body>
-    <!-- Navbar -->
+  <!-- Navbar -->
   <header class="navbar">
     <div class="logo">Miemy</div>
     <ul class="nav-links">
@@ -26,40 +25,27 @@
   </header>
 
   <!-- Giới thiệu chuyên nghiệp -->
-<section class="hero" id="about">
-  <div class="intro">
-    <span class="tag"><i class="fas fa-hand-wave"></i> Xin chào tôi là...</span>
-    <h1 class="split-text">
-      <i class="fas fa-user-circle"></i> <span class="animate-text">Lê Thị Bích My</span>
-    </h1>    
-    <div class="chung">
-      <h2><i class="fas fa-laptop-code"></i> Full-Stack Developer (Student)</h2>
-
-      <p>
-        <i class="fas fa-graduation-cap"></i>
-        Sinh viên năm 2 ngành CNTT – Đại học GTVT TP.HCM (UTH).
-      </p>
-  
-      <p>
-        <i class="fas fa-lightbulb"></i>
-        Luôn chủ động học hỏi qua các dự án, khóa học online và cuộc thi công nghệ. Tôi đam mê biến ý tưởng thành sản phẩm thực tế.
-      </p>
-  
-      <h3><i class="fas fa-bullseye"></i> Mục tiêu nghề nghiệp</h3>
-      <p>
-        Trở thành lập trình viên <strong>full-stack</strong> chuyên nghiệp, có thể xây dựng sản phẩm <em>hiệu quả</em>, <em>thân thiện</em> và <em>có giá trị</em>. Tôi mong muốn làm việc trong môi trường sáng tạo, chuyên nghiệp để không ngừng phát triển bản thân.
-      </p>
+  <section class="hero" id="about">
+    <div class="intro">
+      <span class="tag"><i class="fas fa-hand-wave"></i> Xin chào tôi là...</span>
+      <h1>
+        <i class="fas fa-user-circle"></i> <span> Lê Thị Bích My</span>
+      </h1>    
+      <div class="chung">
+        <h2><i class="fas fa-laptop-code"></i> Full-Stack Developer (Student)</h2>
+        <p><i class="fas fa-graduation-cap"></i> Sinh viên năm 2 ngành CNTT – Đại học GTVT TP.HCM (UTH).</p>
+        <p><i class="fas fa-lightbulb"></i> Luôn chủ động học hỏi qua các dự án, khóa học online và cuộc thi công nghệ. Tôi đam mê biến ý tưởng thành sản phẩm thực tế.</p>
+        <h3><i class="fas fa-bullseye"></i> Mục tiêu nghề nghiệp</h3>
+        <p>Trở thành lập trình viên <strong>full-stack</strong> chuyên nghiệp, có thể xây dựng sản phẩm <em>hiệu quả</em>, <em>thân thiện</em> và <em>có giá trị</em>. Tôi mong muốn làm việc trong môi trường sáng tạo, chuyên nghiệp để không ngừng phát triển bản thân.</p>
+      </div>
+      <a href="#contact" class="connect-link">
+        <i class="fas fa-paper-plane"></i> Liên hệ với tôi
+      </a>
     </div>
-    <a href="#contact" class="connect-link">
-      <i class="fas fa-paper-plane"></i> Liên hệ với tôi
-    </a>
-  </div>
-
-  <div class="profile-pic">
-    <img src="images/ảnh giới thiệu.jpg" alt="Ảnh đại diện" />
-  </div>
-</section>
-
+    <div class="profile-pic">
+      <img src="images/ảnh giới thiệu.jpg" alt="Ảnh đại diện" />
+    </div>
+  </section>
 
   <!-- Sở thích -->
   <section class="section" id="hobby">
@@ -131,43 +117,44 @@
     </div>
   </section>
 
- <!-- Liên hệ -->
-<section class="section" id="contact">
-  <h2>Liên hệ <span>với tôi</span></h2>
-  <div class="contact-form-container">
-    <div class="contact-image">
-      <img src="images/lo.jpg" alt="Liên hệ" />
+  <!-- Liên hệ -->
+  <section class="section" id="contact">
+    <h2>Liên hệ <span>với tôi</span></h2>
+    <div class="contact-form-container">
+      <div class="contact-image">
+        <img src="images/lo.jpg" alt="Liên hệ" />
+      </div>
+      <form class="form-box">
+        <label for="name">Họ Tên*</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ tên..." required />
+
+        <label for="email">Email*</label>
+        <input type="text" id="email" name="email" placeholder="Nhập email..." required />
+
+        <label for="message">Tin nhắn*</label>
+        <textarea id="message" name="message" rows="4" placeholder="Bạn đang cần hỗ trợ gì?" required></textarea>
+
+        <button type="submit">Gửi Ngay</button>
+      </form>
     </div>
-    <form class="form-box">
-      <label for="name">Họ Tên*</label>
-      <input type="text" id="name" name="name" placeholder="Nhập họ tên..." required />
+  </section>
 
-      <label for="email">Email*</label>
-      <input type="text" id="email" name="email" placeholder="Nhập email..." required />
-
-      <label for="message">Tin nhắn*</label>
-      <textarea id="message" name="message" rows="4" placeholder="Bạn đang cần hỗ trợ gì?" required></textarea>
-
-      <button type="submit">Gửi Ngay</button>
-    </form>
-  </div>
-</section>
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-container">
-    <p>&copy; 2025 Lê Thị Bích My. All rights reserved.</p>
-    <div class="footer-socials">
-      <a href="https://facebook.com/wall.tao.ltbm.2011" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://instagram.com/miemy_1210" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://github.com/BichMy-gif" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Lê Thị Bích My. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://facebook.com/wall.tao.ltbm.2011" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/miemy_1210" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/BichMy-gif" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>

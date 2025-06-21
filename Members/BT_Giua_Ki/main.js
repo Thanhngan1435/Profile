@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Active link highlight (optional enhancement)
+  // 3. Active link highlight
   const navLinks = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
     let current = '';
@@ -40,41 +40,25 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
+  // 4. Thêm hiệu ứng chữ bằng class typing
   const el = document.querySelector(".animate-text");
-  if (!el) return;
+  if (el) {
+    el.classList.add("typing-effect");
+  }
 
-  const split = new SplitText(el, { type: "chars" });
-  gsap.set(split.chars, { opacity: 0, y: 40 });
-
-  gsap.to(split.chars, {
-    opacity: 1,
-    y: 0,
-    ease: "power3.out",
-    duration: 0.6,
-    stagger: 0.05,
-    scrollTrigger: {
-      trigger: el,
-      start: "top 80%",
-      toggleActions: "play none none none"
-    }
-  });
-});
-// Hiệu ứng cuộn mượt khi click vào các liên kết có dấu #
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', function (e) {
-    const targetId = this.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
-
-    // Kiểm tra tồn tại phần tử
-    if (targetElement) {
-      e.preventDefault();
-      window.scrollTo({
-        top: targetElement.offsetTop - 60, // điều chỉnh offset nếu có navbar
-        behavior: 'smooth'
-      });
-    }
+  // 5. Cuộn mượt khi click các liên kết có dấu #
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        e.preventDefault();
+        window.scrollTo({
+          top: targetElement.offsetTop - 60,
+          behavior: 'smooth'
+        });
+      }
+    });
   });
 });
