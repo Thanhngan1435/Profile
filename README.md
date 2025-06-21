@@ -6,6 +6,6 @@ Không chỉ hoàn thành bài học, mà còn tạo ra sản phẩm web thật 
 
 Thành Viên:
 
-Huỳnh Thị Thanh Nhung
-Lê Thị Bích My
-Phạm Thị Thanh Ngân
+1. Huỳnh Thị Thanh Nhung
+2. Lê Thị Bích My
+3. Phạm Thị Thanh Ngân
