@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #808080;
+  color: white;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #1c1b1b;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  background: rgba(33, 32, 32, 0.7);
+  box-shadow: 0 2px 5px #282624;
+  height: 50px;  
+  padding: 0 20px;
+  display: flex;
+  align-items: center;  
+}
+
+.navbar ul {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;  
+}
+
+.navbar ul li a {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: monospace;
+  text-decoration: none;
+  color: white;
+}
+.navbar ul li {
+  display: inline;
+  margin-left: 40px;
+}
+
+
+.navbar ul li a:hover {
+  color: #1d1a1e;
+}
+
+.main-content, .about-group, .about-members {
+  min-height: 70vh;
+  padding: 100px 30px;
+}
+
+.main-content {
+  position: relative;
+  text-align: left;
+}
+
+.main-content .home-title {
+  font-size: 55px;
+  font-weight: 600;
+  padding-top: 70px;
+}
+
+.main-content .home-image {
+  width: 400px;
+  height: 540px;
+  float: right;
+  border-radius: 20px;
+   box-shadow: 0 0 30px 10px #504e47;
+}
+
+.main-content .home-bg-box {
+  width: 250px;
+  height: 80px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  margin-top: 60px;
+  box-shadow: 5px 10px rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #f4eff4;
+}
+
+.about-group {
+  background-color: transparent;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #ffccff;
+}
+
+.about-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.custom-image-layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  min-width: 300px;
+}
+
+.custom-image-layout img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.custom-image-layout img:nth-child(3) {
+  grid-column: 1 / -1;
+  height: 230px;
+  width: 300px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #eeeeee;
+}
+
+.about-text ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.about-text li {
+  margin-bottom: 10px;
+}
+
+.about-text hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #8f677b;
+}
+
+.about-members {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.about-members h1 {
+  margin-bottom: 40px;
+  color: #c299ff;
+}
+
+.about-members .member-box {
+  display: inline-block;
+  margin: 0 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-box a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.about-members .member-detail img {
+  width: 250px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.member-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.member-box:hover .member-detail {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.member-box:hover h4 {
+  color: #33ccff;
+}
+
+.member-box h4 {
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+.about-members .member-detail p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+.music-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 50px;
+  height: 50px;
+  transition: background 0.3s;
+}
+
+.music-toggle:hover {
+  background-color: #f0f0f0;
+}
+
+.footer {
+  color: #cccccc;
+  text-align: center;
+  padding: 5px 5px;
+  font-size: 16px;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(255,255,255,0.1);
+  margin-top: 50px;
+}

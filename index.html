@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nhóm 5</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <!-- Hiệu ứng nền -->
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- Navbar -->
+  <div class="navbar" id="collapsibleNavbar">
+    <nav>
+      <ul>
+        <li><a href="#home">Trang Chủ</a></li>
+        <li><a href="#about-class">Giới Thiệu</a></li>
+        <li><a href="#about-members">Thành Viên</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Home -->
+  <div class="main-content" id="home">
+    <img src="img/nhom5.jpg" class="home-image" />
+    <h1 class="home-title">Kết nối ý tưởng – Lập trình tương lai!</h1>
+    <div class="home-bg-box">NHÓM 5</div>
+    <p>Chào mừng bạn đến với trang web của chúng tôi!</p>
+  </div>
+
+  <!-- Giới thiệu nhóm -->
+  <div class="about-group" id="about-class">
+    <h1 class="about-title">GIỚI THIỆU NHÓM</h1>
+    <div class="about-content">
+      <div class="custom-image-layout">
+        <img src="img/gioithieu.jpg" alt="Image 1">
+        <img src="img/gioithieu2.jpg" alt="Image 2">
+        <img src="img/gioithieu3.jpg" alt="Image 3">
+      </div>
+      <div class="about-text">
+        <p><strong>Giới Thiệu:</strong><hr>
+          Chúng tôi là một tập thể năng động gồm các sinh viên đang theo học môn <strong>Lập trình Web</strong>.<br>
+         Với tinh thần học hỏi, sáng tạo và hợp tác, nhóm không chỉ cùng nhau xây dựng các trang web, mà còn cùng nhau phát triển kỹ năng tư duy, thiết kế giao diện và lập trình logic.
+        </p>
+        <ul>
+          <li>Mỗi thành viên có cá tính và thế mạnh riêng: thiết kế, viết nội dung, xử lý mã nguồn.</li>
+          <li>Dù khó khăn, chúng tôi luôn đồng hành và hỗ trợ nhau chinh phục công nghệ.</li>
+        </ul>
+        <p><strong>Mục tiêu của nhóm:</strong><hr>
+          Không chỉ hoàn thành bài học, mà còn tạo ra sản phẩm web thật sự ấn tượng và ý nghĩa! 🌟
+        </p>
+      </div>
+    </div>`
+  </div>
+
+  <!-- Thành viên -->
+  <div class="about-members" id="about-members">
+    <h1 class="about-title">THÀNH VIÊN</h1>
+
+    <div class="member-box">
+      <a href="/Profile/Members/BT_Giua_Ki/Index.html" target="_blank">
+        <div class="member-detail">
+          <img src="img/bichmy.jpg" alt="Lê Thị Bích My" />
+          <h4>Lê Thị Bích My</h4>
+          <p>Ngày sinh : 20/11/2005</p>
+          <p>Chuyên nghành : CNTT</p>
+          <p>Đến từ : Quảng Ngãi</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="member-box">
+      <a href="/Profile/Members/PRO/index.html" target="_blank">
+        <div class="member-detail">
+          <img src="img/thanhngan.jpg" alt="Phạm Thị Thanh Ngân" />
+          <h4>Phạm Thị Thanh Ngân</h4>
+          <p>Ngày sinh : 14/03/2005</p>
+          <p>Chuyên nghành : CNTT</p>
+          <p>Đến từ : Bình Định</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="member-box">
+      <a href="/Profile/Members/Profile_ThanhNhung/index.html" target="_blank">
+        <div class="member-detail">
+          <img src="img/thanhnhung.jpg" alt="Huỳnh Thị Thanh Nhung" />
+          <h4>Huỳnh Thị Thanh Nhung</h4>
+          <p>Ngày sinh : 19/09/2005</p>
+          <p>Chuyên nghành : CNTT</p>
+          <p>Đến từ : Quảng Ngãi</p>
+        </div>
+      </a>
+    </div>
+  </div>
+<!-- Trình phát nhạc -->
+<audio id="bgMusic" loop>
+  <source src="audio/nhac.mp3" type="audio/mpeg" />
+</audio>
+<!-- Nút bật/tắt nhạc -->
+<button id="toggleMusicBtn" class="music-toggle">🔊</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Nhóm 5 - Kết nối đam mê – Kiến tạo tương lai.</p>
+  </footer>
+<script src="js/script.js"></script>
+ 
+</body>
+</html>
